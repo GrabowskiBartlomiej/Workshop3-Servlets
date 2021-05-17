@@ -40,9 +40,9 @@
             <h6 class="m-0 font-weight-bold text-primary">Dodaj użytkownika</h6>
         </div>
         <div class="card-body">
-            <form class = "form-group" action="/user/add" method="post">
+            <form class="form-group" action="/user/add" method="post">
                 Nazwa<br>
-                <input type="text" placeholder="Nazwa użytkownika" name="username" ><br><br>
+                <input type="text" placeholder="Nazwa użytkownika" name="username"><br><br>
                 Email<br>
                 <input type="email" placeholder="Email użytkownika" name="email"><br><br>
                 Hasło<br>
@@ -54,7 +54,7 @@
     </div>
 
 
-    <%@include file="/META-INF/fragments/footer.jsp"%>
+    <%@include file="/META-INF/fragments/footer.jsp" %>
 
 </body>
 </html>

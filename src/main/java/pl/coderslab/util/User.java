@@ -6,17 +6,17 @@ public class User {
     private String username;
     private String password;
 
-    public User(){
+    public User() {
 
     }
 
-    public User(String email, String username, String password){
+    public User(String email, String username, String password) {
         this.email = email;
         this.username = username;
         this.password = password;
     }
 
-    public User(int id){
+    public User(int id) {
         this.id = id;
     }
 

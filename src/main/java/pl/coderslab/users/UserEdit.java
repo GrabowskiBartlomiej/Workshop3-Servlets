@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "UserEdit",urlPatterns = "/user/edit")
+@WebServlet(name = "UserEdit", urlPatterns = "/user/edit")
 public class UserEdit extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -36,8 +36,8 @@ public class UserEdit extends HttpServlet {
         UserDao userDao = new UserDao();
         User userToEdit = userDao.read(id);
 
-        request.setAttribute("user",userToEdit);
-        request.getRequestDispatcher("/users/edit.jsp").forward(request,response);
+        request.setAttribute("user", userToEdit);
+        request.getRequestDispatcher("/users/edit.jsp").forward(request, response);
 
     }
 }

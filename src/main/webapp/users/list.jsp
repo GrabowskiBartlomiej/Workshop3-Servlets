@@ -44,30 +44,32 @@
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Nazwa użytkownika</th>
+                        <th>Email</th>
+                        <th>Akcja</th>
+                    </tr>
+                    <tbody>
+                    <c:forEach items="${users}" var="user">
                         <tr>
-                            <th>id</th>
-                            <th>Nazwa użytkownika</th>
-                            <th>Email</th>
-                            <th>Akcja</th>
+                            <td>${user.getId()}</td>
+                            <td>${user.getUserName()}</td>
+                            <td>${user.getEmail()}</td>
+                            <td><a href="/user/delete?id=${user.getId()}">Usuń </a><a
+                                    href="/user/edit?id=${user.getId()}">Edit </a><a
+                                    href="/user/show?id=${user.getId()}">Pokaż</a></td>
                         </tr>
-                        <tbody>
-                                <c:forEach items="${users}" var="user">
-                                    <tr>
-                                        <td>${user.getId()}</td>
-                                        <td>${user.getUserName()}</td>
-                                        <td>${user.getEmail()}</td>
-                                        <td><a href="/user/delete?id=${user.getId()}">Usuń </a><a href="/user/edit?id=${user.getId()}">Edit </a><a href="/user/show?id=${user.getId()}">Pokaż</a> </td>
-                                    </tr>
-                                </c:forEach>
+                    </c:forEach>
 
-                        </tbody>
+                    </tbody>
                     </thead>
                 </table>
             </div>
         </div>
 
 
-<%@include file="/META-INF/fragments/footer.jsp"%>
+        <%@include file="/META-INF/fragments/footer.jsp" %>
 
 </body>
 </html>

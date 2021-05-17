@@ -17,10 +17,10 @@ public class UserAdd extends HttpServlet {
         String name = request.getParameter("username");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-        response.getWriter().print("<h1>get parameter</h1>" +name + email + password);
+        response.getWriter().print("<h1>get parameter</h1>" + name + email + password);
         UserDao userDao = new UserDao();
 
-        User user = new User(email,name,password);
+        User user = new User(email, name, password);
         response.getWriter().print("<br><br><br><br><h1>dane stworzonego uzytkownika</h1>" + user.getUserName() + user.getEmail() + user.getPassword());
 
         userDao.create(user);

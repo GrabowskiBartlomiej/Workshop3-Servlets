@@ -40,11 +40,11 @@
             <h6 class="m-0 font-weight-bold text-primary">Edycja użytkownika</h6>
         </div>
         <div class="card-body">
-            <form class = "form-group" method="post">
+            <form class="form-group" method="post">
                 Nazwa<br>
-                <input type="text" value="${user.getUserName()}" name="username" ><br><br>
+                <input type="text" value="${user.getUserName()}" name="username"><br><br>
                 Email<br>
-                <input type="email" value="${user.getEmail()}"  name="email"><br><br>
+                <input type="email" value="${user.getEmail()}" name="email"><br><br>
                 Hasło<br>
                 <input type="password" placeholder="Hasło użytkownika" name="password"><br><br>
                 <input class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" type="submit" value="Edytuj">
@@ -54,7 +54,7 @@
     </div>
 
 
-    <%@include file="/META-INF/fragments/footer.jsp"%>
+    <%@include file="/META-INF/fragments/footer.jsp" %>
 
 </body>
 </html>

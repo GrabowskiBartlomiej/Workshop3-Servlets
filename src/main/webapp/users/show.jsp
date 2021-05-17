@@ -45,18 +45,21 @@
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <tr>
-                    <th>Id</th><td>${user.getId()}</td>
+                    <th>Id</th>
+                    <td>${user.getId()}</td>
                 </tr>
                 <tr>
-                    <th>Nazwa użytkownika</th><td>${user.getUserName()}</td>
+                    <th>Nazwa użytkownika</th>
+                    <td>${user.getUserName()}</td>
                 </tr>
                 <tr>
-                    <th>Email</th><td>${user.getEmail()}</td>
+                    <th>Email</th>
+                    <td>${user.getEmail()}</td>
                 </tr>
             </table>
         </div>
     </div>
 
-        <%@include file="/META-INF/fragments/footer.jsp"%>
+    <%@include file="/META-INF/fragments/footer.jsp" %>
 </body>
 </html>
